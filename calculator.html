@@ -1,6 +1,6 @@
 <!doctype HTML>
 <html lang="en">
-<head.
+<head>
 <meta charset="utf-8">
 <title>simple caculator</title>
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -46,7 +46,7 @@
 <div class="container">
   <table border="1" cellspacing="0">
      <tr>
-         <td colspan="4" id="inputlabel">0</td>
+         <td colspan="4" id="inputLabel">0</td>
      </tr>
      <tr>
         <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
@@ -77,7 +77,7 @@
   </table>
 </div>
 <script>
-    var inputlabel = document.getElementById('inputLabel');
+    var inputLabel = document.getElementById('inputLabel');
     function pushBtn(obj) {
       var pushed = obj.innerHTML;
       if (pushed == "=") {
@@ -88,7 +88,7 @@
         inputLabel.innerHTML = '0';
 
       } else {
-        if (innerLabel.innerHTML == '0'){
+        if (inputLabel.innerHTML == '0'){
             inputLabel.innerHTML = pushed;
 
 
